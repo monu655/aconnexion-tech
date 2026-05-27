@@ -2,7 +2,7 @@
   "name": "aconnexion-site",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://monu655.github.io/aconnexion-tech",
+  "homepage": "https://monu655.github.io/aconnexion-tech/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
