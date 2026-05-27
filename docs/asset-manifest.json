@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/aconnexion-tech/static/js/main.2dbda1cd.js",
+    "main.js": "/aconnexion-tech/static/js/main.4cf4c47f.js",
     "index.html": "/aconnexion-tech/index.html",
-    "main.2dbda1cd.js.map": "/aconnexion-tech/static/js/main.2dbda1cd.js.map"
+    "main.4cf4c47f.js.map": "/aconnexion-tech/static/js/main.4cf4c47f.js.map"
   },
   "entrypoints": [
-    "static/js/main.2dbda1cd.js"
+    "static/js/main.4cf4c47f.js"
   ]
 }

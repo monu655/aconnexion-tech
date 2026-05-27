@@ -133,22 +133,25 @@ body{font-family:Poppins,sans-serif;background:#F0F9FF;color:#0F172A;-webkit-fon
 .lbl{display:inline-block;background:linear-gradient(135deg,#EFF9FF,#DBEAFE);color:#0EA5E9;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:5px 15px;border-radius:50px;border:1px solid #BAE6FD;margin-bottom:12px;}
 
 /* ── HAMBURGER (hidden desktop) ── */
-.ham{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;background:none;border:2px solid #E0F2FE;border-radius:10px;cursor:pointer;padding:0;flex-shrink:0;}
-.ham span{display:block;width:20px;height:2.5px;background:#334155;border-radius:2px;transition:all 0.3s;}
-.ham.open{border-color:#0284C7;background:#EFF9FF;}
-.ham.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);background:#0284C7;}
+.ham{display:none;flex-direction:column;justify-content:center;align-items:center;gap:6px;width:48px;height:48px;background:#0284C7;border:none;border-radius:12px;cursor:pointer;padding:0;flex-shrink:0;}
+.ham span{display:block;width:22px;height:3px;background:#fff;border-radius:3px;transition:all 0.3s;}
+.ham.open{background:#075985;}
+.ham.open span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
 .ham.open span:nth-child(2){opacity:0;transform:scaleX(0);}
-.ham.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);background:#0284C7;}
+.ham.open span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
 
 /* Mobile menu */
 .mob-menu{display:none;}
 
 /* ── RESPONSIVE ── */
-@media(max-width:768px){
+@media(max-width:900px){
   .ham{display:flex !important;}
   .desk-nav{display:none !important;}
   .nav-ph{display:none !important;}
   .mob-menu.open{display:block !important;animation:sd 0.25s ease;}
+}
+@media(max-width:600px){
+  .nav-wa{display:none !important;}
 }
 @media(max-width:520px){
   .nav-wa{display:none !important;}
@@ -222,14 +225,14 @@ export default function App(){
 
       {/* Top bar */}
       <div style={{background:"#fff",borderBottom:"1px solid #E0F2FE"}}>
-        <div style={{maxWidth:1320,margin:"0 auto",padding:"0 clamp(14px,3vw,36px)",display:"flex",alignItems:"center",justifyContent:"space-between",height:"clamp(130px,12vw,146px)"}}>
+        <div style={{maxWidth:1320,margin:"0 auto",padding:"0 clamp(14px,3vw,36px)",display:"flex",alignItems:"center",justifyContent:"space-between",height:"clamp(80px,12vw,146px)"}}>
 
           {/* Logo + Name */}
           <div onClick={()=>go("Home")} style={{cursor:"pointer",display:"flex",alignItems:"center",gap:12,flexShrink:0,minWidth:0}}>
-            <img src={LOGO_SRC} alt="logo" style={{width:130,height:130,objectFit:"contain",flexShrink:0,borderRadius:8}}/>
+            <img src={LOGO_SRC} alt="logo" style={{width:"clamp(60px,12vw,130px)",height:"clamp(60px,12vw,130px)",objectFit:"contain",flexShrink:0,borderRadius:8}}/>
             <div style={{borderLeft:"3px solid #CBD5E1",paddingLeft:12,flexShrink:0}}>
-              <div style={{fontWeight:900,fontSize:26,color:"#CC0000",letterSpacing:1,lineHeight:1.2,fontFamily:"Poppins,sans-serif",whiteSpace:"nowrap"}}>A-CONNEXION</div>
-              <div style={{fontWeight:700,fontSize:12,color:"#334155",letterSpacing:3,textTransform:"uppercase",marginTop:4,fontFamily:"Poppins,sans-serif",whiteSpace:"nowrap"}}>TECH INTERNATIONAL</div>
+              <div style={{fontWeight:900,fontSize:"clamp(14px,4vw,26px)",color:"#CC0000",letterSpacing:1,lineHeight:1.2,fontFamily:"Poppins,sans-serif",whiteSpace:"nowrap"}}>A-CONNEXION</div>
+              <div style={{fontWeight:700,fontSize:"clamp(7px,1.8vw,12px)",color:"#334155",letterSpacing:"clamp(1px,0.5vw,3px)",textTransform:"uppercase",marginTop:4,fontFamily:"Poppins,sans-serif",whiteSpace:"nowrap"}}>TECH INTERNATIONAL</div>
             </div>
           </div>
 
